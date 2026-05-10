@@ -21,3 +21,10 @@ Caveat (handwritten margin notes). Loaded via Google Fonts.
 Tokens are purpose-named (--nb-ink, --fs-eyebrow), not value-named
 (--gray-900, --text-md). Survives theme changes; the cost is renaming
 when meaning shifts. Worth it.
+
+## 2026-05-10 — Layout: CSS Grid + grid-template-areas
+
+Used `grid-template-areas` for the 3-column shell so the responsive
+collapse to 1 column is a single redeclaration, not a flex rewrite.
+Side columns are `position: sticky` with `align-self: start` to stay
+pinned without breaking the grid.
