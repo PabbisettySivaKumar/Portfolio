@@ -15,3 +15,9 @@ Reference snapshot lives in `notebook-reference/` of the design project.
 
 Inter (sans), Instrument Serif (display), JetBrains Mono (code/eyebrow),
 Caveat (handwritten margin notes). Loaded via Google Fonts.
+
+## 2026-05-10 — Token naming
+
+Tokens are purpose-named (--nb-ink, --fs-eyebrow), not value-named
+(--gray-900, --text-md). Survives theme changes; the cost is renaming
+when meaning shifts. Worth it.
