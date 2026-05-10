@@ -1,0 +1,65 @@
+/* ============================================================
+   Design tokens — notebook portfolio
+   Single source of truth. Components reference these vars only.
+   ============================================================ */
+
+:root {
+  /* ---------- Color ---------- */
+  --nb-paper: #fbf8f1; /* page background */
+  --nb-ink: #1a1a1a; /* primary text */
+  --nb-dim: #6a665d; /* secondary text, captions */
+  --nb-rule: #d8d3c5; /* hairlines, borders */
+  --nb-accent: #3a5a40; /* forest green — links, active state */
+  --nb-accent-2: #a23a2c; /* rust red — used sparingly */
+  --nb-highlight: #fff2a8; /* highlighter yellow */
+  --nb-margin-bg: #f3eee2; /* sidebar / margin column */
+  --nb-card: #ffffff; /* card background */
+
+  /* ---------- Typography ---------- */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-script: 'Caveat', cursive;
+
+  /* Type scale — anchored to the case-study reference.
+       Use named steps, never raw px in components. */
+  --fs-eyebrow: 11px; /* mono, uppercase, letter-spaced */
+  --fs-caption: 12.5px;
+  --fs-body: 14px;
+  --fs-body-lg: 16px;
+  --fs-h3: 18px;
+  --fs-h2: 28px; /* italic serif section heads */
+  --fs-h1: 40px;
+  --fs-display: 56px; /* hero serif */
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.3;
+  --lh-body: 1.65;
+
+  --ls-eyebrow: 1.4px;
+  --ls-display: -1.2px;
+
+  /* ---------- Spacing (8pt grid + half-steps) ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 44px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---------- Radii ---------- */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* ---------- Layout ---------- */
+  --layout-sidebar: 200px;
+  --layout-margin: 240px;
+  --layout-max: 1180px;
+
+  /* ---------- Shadow ---------- */
+  --shadow-card: 1px 2px 0 rgba(0, 0, 0, 0.04);
+}

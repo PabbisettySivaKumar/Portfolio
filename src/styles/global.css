@@ -1,22 +1,26 @@
-:root {
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Instrument Serif', Georgia, serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-  --font-script: 'Caveat', cursive;
-}
+@import './tokens.css';
 
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
-  font-family: var(--font-sans);
-  background: #f6f4ef;
-  color: #29261b;
-  -webkit-font-smoothing: antialiased;
+  padding: 0;
 }
 
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body);
+  background: var(--nb-paper);
+  color: var(--nb-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography utilities — keep these atomic, prefer them over inline fontFamily */
 .font-sans {
   font-family: var(--font-sans);
 }
