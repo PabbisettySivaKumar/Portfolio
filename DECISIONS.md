@@ -28,3 +28,11 @@ Used `grid-template-areas` for the 3-column shell so the responsive
 collapse to 1 column is a single redeclaration, not a flex rewrite.
 Side columns are `position: sticky` with `align-self: start` to stay
 pinned without breaking the grid.
+
+## 2026-05-10 — Component API conventions
+
+- Co-located CSS (Component.tsx + Component.css next to each other).
+- BEM-style class names (nb-block\_\_element, is-active modifier).
+- Spread `...rest` HTML attributes on Card so callers can attach handlers.
+- Props expose what should vary; identity stays in CSS.
+- `Showcase` page acts as the in-house Storybook.
