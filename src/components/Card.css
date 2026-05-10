@@ -1,0 +1,7 @@
+.nb-card {
+  background: var(--nb-card);
+  border: 1px solid var(--nb-rule);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-card);
+}

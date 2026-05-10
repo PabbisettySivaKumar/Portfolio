@@ -1,0 +1,32 @@
+.nb-section-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-7);
+  margin-bottom: var(--space-3);
+}
+
+.nb-section-head__num {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  color: var(--nb-dim);
+  flex: 0 0 auto;
+}
+
+.nb-section-head__title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h2);
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  flex: 0 1 auto;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.nb-section-head__rule {
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--nb-rule);
+  min-width: var(--space-5);
+}

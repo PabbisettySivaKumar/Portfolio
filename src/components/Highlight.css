@@ -1,0 +1,4 @@
+.nb-highlight {
+  background: linear-gradient(180deg, transparent 60%, var(--nb-highlight) 60%);
+  padding: 0 2px;
+}
