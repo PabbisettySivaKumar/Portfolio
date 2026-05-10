@@ -1,0 +1,68 @@
+/* ============================================================
+   PageShell — 3-column notebook layout
+   sidebar (sticky) · main (scrolls) · margin (sticky)
+   Stacks to 1 column below 1100px.
+   ============================================================ */
+
+.shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--layout-sidebar) 1fr var(--layout-margin);
+  grid-template-areas: 'sidebar main margin';
+}
+
+.shell__sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow-y: auto;
+  padding: var(--space-6) var(--space-4);
+  background: var(--nb-margin-bg);
+  border-right: 1px solid var(--nb-rule);
+}
+
+.shell__main {
+  grid-area: main;
+  padding: var(--space-7) var(--space-8) var(--space-9);
+
+  /* ruled-paper effect — faint horizontal lines, like a real notebook */
+  background-image: repeating-linear-gradient(0deg, transparent 0 31px, var(--nb-rule) 31px 32px);
+  background-position: 0 6px;
+}
+
+.shell__margin {
+  grid-area: margin;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow-y: auto;
+  padding: var(--space-6) var(--space-4);
+  background: var(--nb-margin-bg);
+  border-left: 1px solid var(--nb-rule);
+}
+
+/* ----- Responsive: stack to 1 column ----- */
+@media (max-width: 1100px) {
+  .shell {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'sidebar'
+      'main'
+      'margin';
+  }
+
+  .shell__sidebar,
+  .shell__margin {
+    position: static;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid var(--nb-rule);
+  }
+
+  .shell__main {
+    padding: var(--space-6) var(--space-5) var(--space-7);
+  }
+}
